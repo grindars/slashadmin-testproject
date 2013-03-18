@@ -1,14 +1,16 @@
-class FrontController < SlashAdmin::Controller
+class AdminFooController < SlashAdmin::Controller
   admin Foo
   
   index do
-    header do
-      span { 'Hello' }
-      span { 'World' }
+    header! do
+      column "Id"
+      column "Updated at"
+      column "Created at"
+      column "Actions"
     end
-
-    header { 'plain' }
-
+    column :id
+    column :updated_at
+    column :created_at
     default_actions
   end
 

@@ -15,12 +15,12 @@ class AdminFooController < SlashAdmin::Controller
   end
 
   show do |t|
-    div do
-      span { 'before' }
-      t.attribute :id
-      span { 'after' }
-      t.attribute :created_at
-      t.attribute :updated_at
+    attributes_table do
+      row :id do
+        strong t.id
+      end
+      row :updated_at
+      row :created_at
     end
   end
 end

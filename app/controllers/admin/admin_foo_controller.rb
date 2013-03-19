@@ -23,4 +23,14 @@ class AdminFooController < SlashAdmin::Controller
       row :created_at
     end
   end
+
+  form do |f|
+    f.input :id
+    strong "fuck"
+    div(:style => "border: solid 1px black") do
+      strong "some nesting"
+      f.input :id
+    end
+    f.submit
+  end
 end

@@ -26,6 +26,13 @@ PATH
       show_for
       slashadmin
 
+PATH
+  remote: ../slashadmin-simple_form
+  specs:
+    slashadmin-simple_form (0.0.1)
+      simple_form
+      slashadmin
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -114,6 +121,7 @@ GEM
       sprockets-rails (~> 2.0.0.rc0)
       tilt (~> 1.3)
     show_for (0.2.4)
+    simple_form (1.4.1)
     sprockets (2.9.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -154,6 +162,7 @@ DEPENDENCIES
   slashadmin!
   slashadmin-grid_fu!
   slashadmin-show_for!
+  slashadmin-simple_form!
   sqlite3
   therubyracer
   turbolinks

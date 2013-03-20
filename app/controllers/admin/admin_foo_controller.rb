@@ -1,14 +1,19 @@
 class AdminFooController < SlashAdmin::Controller
   admin Foo
+  permit_params :title
   
   index do
     header! do
       column "Id"
+      column "Title"
       column "Updated at"
       column "Created at"
       column "Actions"
     end
-    column :id
+    column :id do |t|
+      strong t.id
+    end
+    column :title
     column :updated_at
     column :created_at
     default_actions
@@ -19,17 +24,15 @@ class AdminFooController < SlashAdmin::Controller
       row :id do
         strong t.id
       end
+      row :title
       row :updated_at
       row :created_at
     end
   end
 
   form do |f|
-    f.input :id
-    strong "fuck"
-    div(:style => "border: solid 1px black") do
-      strong "some nesting"
-      f.input :id
+    div(:style => "border: solid 1px black; padding: 4px;") do
+      f.input :title
     end
     f.submit
   end

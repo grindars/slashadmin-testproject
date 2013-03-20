@@ -4,12 +4,14 @@ class AdminFooController < SlashAdmin::Controller
   
   index do
     header! do
+      column ""
       column "Id"
       column "Title"
       column "Updated at"
       column "Created at"
       column "Actions"
     end
+    batch_select
     column :id do |t|
       strong t.id
     end

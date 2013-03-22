@@ -12,27 +12,6 @@ PATH
       batch_actions
       rails (~> 4.0.0.beta1)
 
-PATH
-  remote: ../slashadmin-grid_fu
-  specs:
-    slashadmin-grid_fu (0.0.1)
-      grid_fu
-      slashadmin
-
-PATH
-  remote: ../slashadmin-show_for
-  specs:
-    slashadmin-show_for (0.0.1)
-      show_for
-      slashadmin
-
-PATH
-  remote: ../slashadmin-simple_form
-  specs:
-    slashadmin-simple_form (0.0.1)
-      simple_form
-      slashadmin
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -159,10 +138,9 @@ DEPENDENCIES
   jquery-rails
   rails (= 4.0.0.beta1)
   sass-rails (~> 4.0.0.beta1)
+  show_for
+  simple_form
   slashadmin!
-  slashadmin-grid_fu!
-  slashadmin-show_for!
-  slashadmin-simple_form!
   sqlite3
   therubyracer
   turbolinks

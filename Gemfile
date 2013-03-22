@@ -39,7 +39,10 @@ gem 'jbuilder', '~> 1.0.1'
 
 gem 'slashadmin', path: '../slashadmin'
 gem 'grid_fu', path: '../grid_fu'
-gem 'slashadmin-grid_fu', path: '../slashadmin-grid_fu'
-gem 'slashadmin-show_for', path: '../slashadmin-show_for'
-gem 'slashadmin-simple_form', path: '../slashadmin-simple_form'
+gem 'show_for'
+gem 'simple_form'
+
+#gem 'slashadmin-grid_fu', path: '../slashadmin-grid_fu'
+#gem 'slashadmin-show_for', path: '../slashadmin-show_for'
+#gem 'slashadmin-simple_form', path: '../slashadmin-simple_form'
 

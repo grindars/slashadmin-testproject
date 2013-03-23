@@ -13,9 +13,7 @@ class AdminFooController < SlashAdmin::Controller
       column "Actions"
     end
     batch_select
-    column :id do |t|
-      strong t.id
-    end
+    column :id
     column :title
     column :updated_at
     column :created_at
@@ -24,9 +22,7 @@ class AdminFooController < SlashAdmin::Controller
 
   show do |t|
     attributes_table do
-      row :id do
-        strong t.id
-      end
+      row :id
       row :title
       row :updated_at
       row :created_at
@@ -34,9 +30,7 @@ class AdminFooController < SlashAdmin::Controller
   end
 
   form do |f|
-    div(:style => "border: solid 1px black; padding: 4px;") do
-      f.input :title
-    end
-    f.submit
+    f.input :title
+    f.button :submit
   end
 end

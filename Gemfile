@@ -38,11 +38,13 @@ gem 'jbuilder', '~> 1.0.1'
 # gem 'debugger'
 
 gem 'slashadmin', path: '../slashadmin'
-gem 'grid_fu', path: '../grid_fu'
-gem 'show_for'
-gem 'simple_form'
+gem 'grid_fu', path: '../grid_fu', :require => false
+gem 'show_for', :require => false
+gem 'simple_form', '~> 3.0.0.beta1', :require => false
 
 #gem 'slashadmin-grid_fu', path: '../slashadmin-grid_fu'
 #gem 'slashadmin-show_for', path: '../slashadmin-show_for'
 #gem 'slashadmin-simple_form', path: '../slashadmin-simple_form'
 
+
+gem 'pry', :require => false

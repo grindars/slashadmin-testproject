@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: d29b744d92a380e61d0c62149cc60e91ec4ba0f2
+  branch: rails4
+  specs:
+    devise (2.2.3)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (~> 4.0.0.beta)
+      warden (~> 1.2.1)
+
 PATH
   remote: ../grid_fu
   specs:
@@ -45,6 +56,7 @@ GEM
     arel (4.0.0.beta2)
     atomic (1.0.1)
     batch_actions (0.0.1)
+    bcrypt-ruby (3.0.1)
     bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
     builder (3.1.4)
@@ -76,6 +88,7 @@ GEM
     mime-types (1.21)
     minitest (4.6.2)
     multi_json (1.6.1)
+    orm_adapter (0.4.0)
     polyglot (0.3.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
@@ -139,12 +152,15 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    warden (1.2.1)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0.beta1)
+  devise!
   grid_fu!
   jbuilder (~> 1.0.1)
   jquery-rails

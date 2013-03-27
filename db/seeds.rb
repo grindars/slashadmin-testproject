@@ -6,6 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Foo.create!
+0.upto(256) do |id|
+  Foo.create!(title: "foo #{id}")
+end
+
 User.create!(email: 'admin@example.com', password: 'admin', password_confirmation: 'admin')
 User.create!(email: 'user@example.com', password: 'user', password_confirmation: 'user')

@@ -8,3 +8,4 @@
 
 Foo.create!
 User.create!(email: 'admin@example.com', password: 'admin', password_confirmation: 'admin')
+User.create!(email: 'user@example.com', password: 'user', password_confirmation: 'user')

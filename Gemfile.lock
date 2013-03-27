@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/inossidabile/heimdallr.git
+  revision: f8991e5c75de17f7999de371ea52a438232c48e0
+  branch: rails4
+  specs:
+    heimdallr (1.0.6)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      orm_adapter (~> 0.4.0)
+
+GIT
   remote: git://github.com/plataformatec/devise.git
   revision: d29b744d92a380e61d0c62149cc60e91ec4ba0f2
   branch: rails4
@@ -16,20 +26,13 @@ PATH
       activesupport (>= 3)
 
 PATH
-  remote: ../heimdallr
-  specs:
-    heimdallr (1.0.6)
-      activemodel (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      orm_adapter (~> 0.4.0)
-
-PATH
   remote: ../slashadmin
   specs:
     slashadmin (0.0.1)
       arbre
       batch_actions
       bootstrap-sass (~> 2.3.1.0)
+      haml
       rails (~> 4.0.0.beta1)
 
 GEM
@@ -79,6 +82,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    haml (4.0.1)
+      tilt
     hike (1.2.1)
     i18n (0.6.4)
     jbuilder (1.0.2)
@@ -94,8 +99,8 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.21)
-    minitest (4.6.2)
-    multi_json (1.6.1)
+    minitest (4.7.0)
+    multi_json (1.7.2)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
     pry (0.9.12)

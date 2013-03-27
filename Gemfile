@@ -42,6 +42,6 @@ gem 'grid_fu', path: '../grid_fu', :require => false
 gem 'show_for', :require => false
 gem 'simple_form', '~> 3.0.0.beta1', :require => false
 gem 'devise', github: 'plataformatec/devise', branch: 'rails4'
-gem 'heimdallr', github: 'grindars/heimdallr', branch: 'rails4'
+gem 'heimdallr', github: 'inossidabile/heimdallr', branch: 'rails4'
 
 gem 'pry', :require => false

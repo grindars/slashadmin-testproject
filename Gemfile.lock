@@ -19,6 +19,16 @@ GIT
       railties (~> 4.0.0.beta)
       warden (~> 1.2.1)
 
+GIT
+  remote: git://github.com/spectator/ransack.git
+  revision: a40055a59f7650352228bef17eb4c91e166a1875
+  branch: rails4
+  specs:
+    ransack (0.7.3)
+      actionpack (>= 3.0)
+      activerecord (>= 3.0)
+      polyamorous (~> 0.6.0)
+
 PATH
   remote: ../grid_fu
   specs:
@@ -35,6 +45,7 @@ PATH
       haml
       kaminari
       rails (~> 4.0.0.beta1)
+      ransack
 
 GEM
   remote: https://rubygems.org/
@@ -106,6 +117,8 @@ GEM
     minitest (4.7.0)
     multi_json (1.7.2)
     orm_adapter (0.4.0)
+    polyamorous (0.6.0)
+      activerecord (>= 3.0)
     polyglot (0.3.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
@@ -184,6 +197,7 @@ DEPENDENCIES
   jquery-rails
   pry
   rails (= 4.0.0.beta1)
+  ransack!
   sass-rails (~> 4.0.0.beta1)
   show_for
   simple_form (~> 3.0.0.beta1)

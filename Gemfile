@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 1.0.1'
 # gem 'debugger'
 
 gem 'slashadmin', path: '../slashadmin'
-gem 'grid_fu', github: 'grindars/grid_fu', :require => false
+gem 'tablette', require: false
 gem 'show_for', '~> 0.2.5', github: 'grindars/show_for', :require => false
 gem 'simple_form', '~> 3.0.0.beta1', :require => false
 gem 'devise', github: 'plataformatec/devise', branch: 'rails4'

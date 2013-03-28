@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/grindars/grid_fu.git
+  revision: d4749c03463b9180b9157cc66be890a3b476cad4
+  specs:
+    grid_fu (0.0.2)
+      activesupport (>= 3)
+
+GIT
   remote: git://github.com/inossidabile/heimdallr.git
   revision: f8991e5c75de17f7999de371ea52a438232c48e0
   branch: rails4
@@ -28,12 +35,6 @@ GIT
       actionpack (>= 3.0)
       activerecord (>= 3.0)
       polyamorous (~> 0.6.0)
-
-PATH
-  remote: ../grid_fu
-  specs:
-    grid_fu (0.0.2)
-      activesupport (>= 3)
 
 PATH
   remote: ../slashadmin

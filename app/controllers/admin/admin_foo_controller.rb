@@ -32,6 +32,8 @@ class AdminFooController < SlashAdmin::Controller
 
   form do |f|
     f.input :title
-    f.button :submit
+    f.controls do
+      f.button :submit
+    end
   end
 end

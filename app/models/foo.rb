@@ -1,6 +1,6 @@
 class Foo < ActiveRecord::Base
   include Heimdallr::Model
-  
+ 
   restrict do |user, record|
     scope :fetch
     scope :delete

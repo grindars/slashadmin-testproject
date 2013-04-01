@@ -45,6 +45,7 @@ PATH
       batch_actions
       bootstrap-sass (~> 2.3.1.0)
       haml
+      i18n
       kaminari
       rails (~> 4.0.0.beta1)
       ransack

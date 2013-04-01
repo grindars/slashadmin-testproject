@@ -1,7 +1,7 @@
-class Foo < ActiveRecord::Base
+class Bar < ActiveRecord::Base
   include Heimdallr::Model
  
-  has_many :foos
+  belongs_to :foo
 
   restrict do |user, record|
     scope :fetch
